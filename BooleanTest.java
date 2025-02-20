@@ -14,8 +14,7 @@ public class BooleanTest {
         boolean d = keyboard.nextBoolean();
         keyboard.close();
 
-        boolean status = (b && !d) && (!b && !c && d) && (!a && !b && !c) && (a && c && !d);
-
+        boolean status = b && !d || !b && !c && d || !a && !b && !c || a && c && !d;
 
         System.out.println("\n Your boolean status is: " + status);
     }
